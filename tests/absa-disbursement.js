@@ -30,8 +30,7 @@ export function setup() {
   const tokenEndpoint = "https://secure-staging.stitch.money/connect/token";
   const clientId = "YOUR CLIENT ID";
   const clientSecret = "YOUR CLIENT SECRET";
-  const scope =
-    "bankstatements accountholders balances transactions accounts client_disbursement";
+  const scope = "YOUR SPACE-DELIMITED SCOPES";
 
   const data = {
     grant_type: "client_credentials",
