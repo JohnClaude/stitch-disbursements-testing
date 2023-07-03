@@ -1,0 +1,11 @@
+### Running Tests
+
+1. In `tests/absa-disbursement.js`, add the client id and secret
+2. In the same file, find `options` and set the desired number of iterations or virtual users
+3. In the terminal, change directory to `tests/`
+4. Run `k6 run --out json=test.json absa-disbursement.js`
+
+### Variables
+
+Each variable set has a percentage value. This is how often do you want it to be used in the test.
+For example, if the number of iterations is 100 and a variable has a percentage of 25, it will be used 25 times out of the 100 iterations.
